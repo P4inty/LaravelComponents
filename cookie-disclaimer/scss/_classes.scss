@@ -1,0 +1,37 @@
+.cd-box {
+    background-color: $cd-box-background-color;
+    position: fixed;
+    z-index: $cd-box-z;
+    width: $cd-box-size;
+    padding: $cd-padding;
+    display: none;
+    &.cd-btm {
+        bottom: $cd-box-border-space;
+    }
+    &.cd-top {
+        top: $cd-box-border-space;
+    }
+    &.cd-right {
+        right: $cd-box-border-space;
+    }
+    &.cd-left {
+        left: $cd-box-border-space;
+    }
+    &.cd-show {
+        display: inline;
+    }
+    @media (max-width: $cd-break-point) {
+        width: calc(100vw - 2 * #{$cd-box-border-space});
+    }
+    .cd-button {
+        background-color: $cd-button-color;
+        margin-top: $cd-button-margin;
+        color: $cd-button-text-color;
+        border: none;
+        display: block;
+        padding: $cd-button-padding;
+        &:hover {
+            background-color: $cd-button-color-hover;
+        }
+    }
+}
