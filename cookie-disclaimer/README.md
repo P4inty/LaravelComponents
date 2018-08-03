@@ -9,6 +9,10 @@ Simple Cookie Disclaimer created with Vue.
 ```
 
 ### Installing
+- ```require('[path/to/cookie-disclaimer.js]')``` - in your app.js or where you want to import the file.
+- ```@import '[path/to/cookie-disclaimer.scss]'``` - in your app.scss or where you want to import the file.
+- include the example file ```cookie-disclaimer.blade.php``` in your app.blade.php or where you want it to be. Alternative you can create your own cookie-disclaimer, but you should include the required classes and id's as seen below.
+
 
 ## Usage
 ### Required
@@ -33,6 +37,8 @@ Simple Cookie Disclaimer created with Vue.
 
 ## Customization
 ### Scss
+To customize the variables import the ```_variables.scss``` first, then adjust the variables to your need and then import the ```_classes.scss```at the end.
+
 Variable|default|
 -|-
 cd-box-background-color|hsl(0, 0%, 92%)
